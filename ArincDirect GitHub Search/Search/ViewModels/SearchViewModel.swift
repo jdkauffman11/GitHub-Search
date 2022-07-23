@@ -23,7 +23,7 @@ class SearchViewModel: ObservableObject {
         }
         
         var request = URLRequest(url: url)
-        request.allHTTPHeaderFields = ["Authorization": "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"]
+        request.allHTTPHeaderFields = ["Authorization": ""]
         task = URLSession.shared.dataTaskPublisher(for: request)
             .map { $0.data }
             .decode(type: GitHubRepoSearchResponse.self, decoder: JSONDecoder())
