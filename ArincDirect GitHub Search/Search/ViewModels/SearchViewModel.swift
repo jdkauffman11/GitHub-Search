@@ -19,6 +19,7 @@ class SearchViewModel: ObservableObject {
         guard let searchText = searchFilters.searchText,
               let sortAscending = searchFilters.orderAscending,
               let resultsPerPage = searchFilters.resultsPerPage,
+              !searchText.isEmpty,
               let url = URL(string: "https://api.github.com/search/repositories?q=\(searchText)+in:name,description,readme\(languageSearchString)&per_page=\(resultsPerPage)&sort=stars&order=\(sortAscending ? "asc" : "desc")") else {
             return
         }
