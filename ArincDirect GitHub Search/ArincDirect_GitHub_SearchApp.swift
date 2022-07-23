@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct ArincDirect_GitHub_SearchApp: App {
+    @StateObject private var dataController = DataController()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
 }

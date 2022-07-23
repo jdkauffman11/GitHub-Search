@@ -7,18 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1723AFB4288A639F00876407 /* Float+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1723AFB3288A639F00876407 /* Float+Extensions.swift */; };
+		1723AFB7288B2E5200876407 /* BookmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1723AFB6288B2E5200876407 /* BookmarkView.swift */; };
+		1723AFBC288B369E00876407 /* RepoModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1723AFBA288B369E00876407 /* RepoModel.xcdatamodeld */; };
+		1723AFBE288B375B00876407 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1723AFBD288B375B00876407 /* DataController.swift */; };
+		1723AFC3288B7EDC00876407 /* GitHubSearchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1723AFC2288B7EDC00876407 /* GitHubSearchError.swift */; };
+		1723AFC5288B8C8200876407 /* RepositorySearchFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1723AFC4288B8C8200876407 /* RepositorySearchFilter.swift */; };
+		1723AFC7288B8E7700876407 /* SearchFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1723AFC6288B8E7700876407 /* SearchFilterView.swift */; };
 		17F57D702887969700F6BE1B /* ArincDirect_GitHub_SearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F57D6F2887969700F6BE1B /* ArincDirect_GitHub_SearchApp.swift */; };
 		17F57D722887969700F6BE1B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F57D712887969700F6BE1B /* ContentView.swift */; };
 		17F57D742887969A00F6BE1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17F57D732887969A00F6BE1B /* Assets.xcassets */; };
 		17F57D772887969A00F6BE1B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17F57D762887969A00F6BE1B /* Preview Assets.xcassets */; };
+		17F57D7F288797AB00F6BE1B /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F57D7E288797AB00F6BE1B /* SearchView.swift */; };
+		17F57D8128879B0000F6BE1B /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F57D8028879B0000F6BE1B /* SearchViewModel.swift */; };
+		17F57D842889116C00F6BE1B /* GitHubRepoSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F57D832889116C00F6BE1B /* GitHubRepoSearchResponse.swift */; };
+		17F57D862889118800F6BE1B /* RepositoryDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F57D852889118800F6BE1B /* RepositoryDescription.swift */; };
+		17F57D89288918C600F6BE1B /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F57D88288918C600F6BE1B /* Color+Extensions.swift */; };
+		17F57D8D288A01F200F6BE1B /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F57D8C288A01F200F6BE1B /* SearchTextField.swift */; };
+		17F57D8F288A027200F6BE1B /* ResultCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F57D8E288A027200F6BE1B /* ResultCountView.swift */; };
+		17F57D91288A057800F6BE1B /* RepositoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F57D90288A057800F6BE1B /* RepositoryListView.swift */; };
+		17F57D93288A088E00F6BE1B /* RepositoryListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F57D92288A088E00F6BE1B /* RepositoryListCell.swift */; };
+		17F57D95288A12B300F6BE1B /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F57D94288A12B300F6BE1B /* View+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		17F57D6C2887969600F6BE1B /* ArincDirect GitHub Search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ArincDirect GitHub Search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1723AFB3288A639F00876407 /* Float+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Extensions.swift"; sourceTree = "<group>"; };
+		1723AFB6288B2E5200876407 /* BookmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkView.swift; sourceTree = "<group>"; };
+		1723AFBB288B369E00876407 /* RepoModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RepoModel.xcdatamodel; sourceTree = "<group>"; };
+		1723AFBD288B375B00876407 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		1723AFC2288B7EDC00876407 /* GitHubSearchError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubSearchError.swift; sourceTree = "<group>"; };
+		1723AFC4288B8C8200876407 /* RepositorySearchFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorySearchFilter.swift; sourceTree = "<group>"; };
+		1723AFC6288B8E7700876407 /* SearchFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFilterView.swift; sourceTree = "<group>"; };
+		17F57D6C2887969600F6BE1B /* GitHub Search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GitHub Search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F57D6F2887969700F6BE1B /* ArincDirect_GitHub_SearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArincDirect_GitHub_SearchApp.swift; sourceTree = "<group>"; };
 		17F57D712887969700F6BE1B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		17F57D732887969A00F6BE1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17F57D762887969A00F6BE1B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		17F57D7E288797AB00F6BE1B /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		17F57D8028879B0000F6BE1B /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		17F57D832889116C00F6BE1B /* GitHubRepoSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubRepoSearchResponse.swift; sourceTree = "<group>"; };
+		17F57D852889118800F6BE1B /* RepositoryDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDescription.swift; sourceTree = "<group>"; };
+		17F57D88288918C600F6BE1B /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		17F57D8C288A01F200F6BE1B /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
+		17F57D8E288A027200F6BE1B /* ResultCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCountView.swift; sourceTree = "<group>"; };
+		17F57D90288A057800F6BE1B /* RepositoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListView.swift; sourceTree = "<group>"; };
+		17F57D92288A088E00F6BE1B /* RepositoryListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListCell.swift; sourceTree = "<group>"; };
+		17F57D94288A12B300F6BE1B /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +66,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1723AFB5288B2E4300876407 /* Bookmarks */ = {
+			isa = PBXGroup;
+			children = (
+				1723AFB6288B2E5200876407 /* BookmarkView.swift */,
+			);
+			path = Bookmarks;
+			sourceTree = "<group>";
+		};
+		1723AFC1288B7D7F00876407 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				17F57D8028879B0000F6BE1B /* SearchViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		17F57D632887969600F6BE1B = {
 			isa = PBXGroup;
 			children = (
@@ -43,7 +93,7 @@
 		17F57D6D2887969600F6BE1B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				17F57D6C2887969600F6BE1B /* ArincDirect GitHub Search.app */,
+				17F57D6C2887969600F6BE1B /* GitHub Search.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,10 +101,15 @@
 		17F57D6E2887969600F6BE1B /* ArincDirect GitHub Search */ = {
 			isa = PBXGroup;
 			children = (
+				1723AFB5288B2E4300876407 /* Bookmarks */,
+				17F57D872889189B00F6BE1B /* Extensions */,
+				17F57D7D2887977F00F6BE1B /* Search */,
 				17F57D6F2887969700F6BE1B /* ArincDirect_GitHub_SearchApp.swift */,
 				17F57D712887969700F6BE1B /* ContentView.swift */,
 				17F57D732887969A00F6BE1B /* Assets.xcassets */,
 				17F57D752887969A00F6BE1B /* Preview Content */,
+				1723AFBA288B369E00876407 /* RepoModel.xcdatamodeld */,
+				1723AFBD288B375B00876407 /* DataController.swift */,
 			);
 			path = "ArincDirect GitHub Search";
 			sourceTree = "<group>";
@@ -65,6 +120,50 @@
 				17F57D762887969A00F6BE1B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		17F57D7D2887977F00F6BE1B /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				17F57D8B288A01C200F6BE1B /* Views */,
+				17F57D822887A01300F6BE1B /* Models */,
+				1723AFC1288B7D7F00876407 /* ViewModels */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		17F57D822887A01300F6BE1B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				17F57D832889116C00F6BE1B /* GitHubRepoSearchResponse.swift */,
+				17F57D852889118800F6BE1B /* RepositoryDescription.swift */,
+				1723AFC2288B7EDC00876407 /* GitHubSearchError.swift */,
+				1723AFC4288B8C8200876407 /* RepositorySearchFilter.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		17F57D872889189B00F6BE1B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				17F57D88288918C600F6BE1B /* Color+Extensions.swift */,
+				17F57D94288A12B300F6BE1B /* View+Extensions.swift */,
+				1723AFB3288A639F00876407 /* Float+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		17F57D8B288A01C200F6BE1B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				17F57D8C288A01F200F6BE1B /* SearchTextField.swift */,
+				17F57D8E288A027200F6BE1B /* ResultCountView.swift */,
+				17F57D90288A057800F6BE1B /* RepositoryListView.swift */,
+				17F57D92288A088E00F6BE1B /* RepositoryListCell.swift */,
+				17F57D7E288797AB00F6BE1B /* SearchView.swift */,
+				1723AFC6288B8E7700876407 /* SearchFilterView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,7 +183,7 @@
 			);
 			name = "ArincDirect GitHub Search";
 			productName = "ArincDirect GitHub Search";
-			productReference = 17F57D6C2887969600F6BE1B /* ArincDirect GitHub Search.app */;
+			productReference = 17F57D6C2887969600F6BE1B /* GitHub Search.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -138,7 +237,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				17F57D722887969700F6BE1B /* ContentView.swift in Sources */,
+				1723AFC5288B8C8200876407 /* RepositorySearchFilter.swift in Sources */,
+				1723AFB4288A639F00876407 /* Float+Extensions.swift in Sources */,
+				17F57D862889118800F6BE1B /* RepositoryDescription.swift in Sources */,
+				1723AFC7288B8E7700876407 /* SearchFilterView.swift in Sources */,
+				17F57D91288A057800F6BE1B /* RepositoryListView.swift in Sources */,
+				17F57D8F288A027200F6BE1B /* ResultCountView.swift in Sources */,
+				1723AFBC288B369E00876407 /* RepoModel.xcdatamodeld in Sources */,
+				17F57D7F288797AB00F6BE1B /* SearchView.swift in Sources */,
+				1723AFC3288B7EDC00876407 /* GitHubSearchError.swift in Sources */,
+				17F57D842889116C00F6BE1B /* GitHubRepoSearchResponse.swift in Sources */,
+				17F57D89288918C600F6BE1B /* Color+Extensions.swift in Sources */,
+				1723AFB7288B2E5200876407 /* BookmarkView.swift in Sources */,
+				17F57D8128879B0000F6BE1B /* SearchViewModel.swift in Sources */,
 				17F57D702887969700F6BE1B /* ArincDirect_GitHub_SearchApp.swift in Sources */,
+				17F57D93288A088E00F6BE1B /* RepositoryListCell.swift in Sources */,
+				1723AFBE288B375B00876407 /* DataController.swift in Sources */,
+				17F57D95288A12B300F6BE1B /* View+Extensions.swift in Sources */,
+				17F57D8D288A01F200F6BE1B /* SearchTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +396,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kauffman-enterprises.ArincDirect-GitHub-Search";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "GitHub Search";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -308,7 +424,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kauffman-enterprises.ArincDirect-GitHub-Search";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "GitHub Search";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -337,6 +453,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1723AFBA288B369E00876407 /* RepoModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1723AFBB288B369E00876407 /* RepoModel.xcdatamodel */,
+			);
+			currentVersion = 1723AFBB288B369E00876407 /* RepoModel.xcdatamodel */;
+			path = RepoModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 17F57D642887969600F6BE1B /* Project object */;
 }
