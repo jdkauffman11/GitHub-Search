@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     let searchString = NSLocalizedString("ContentView.search", bundle: .main, value: "Search", comment: "")
     let bookmarkString = NSLocalizedString("ContentView.bookmark", bundle: .main, value: "Bookmarks", comment: "")
     @State private var selectedIndex = 0

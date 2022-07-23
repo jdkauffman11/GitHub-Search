@@ -12,6 +12,7 @@ struct ResultCountView: View {
     private let resultsCount = NSLocalizedString("SearchView.searchResultCount", bundle: .main, value: "Showing %d of %@ results", comment: "search result count")
     private let showingResultCount: Int
     private let totalResultCount: Float
+    
     init(showingResultCount: Int? = 0, totalResultCount: Float? = 0) {
         self.showingResultCount = showingResultCount ?? 0
         self.totalResultCount = totalResultCount ?? 0

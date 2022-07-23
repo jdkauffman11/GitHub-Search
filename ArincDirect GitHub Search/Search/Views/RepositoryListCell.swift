@@ -11,6 +11,7 @@ struct RepositoryListCell: View {
     let unavailableDataString = NSLocalizedString("RepositoryListCell.unavailableDataString", bundle: .main, value: "Data unavailable", comment: "")
     let starCountString = NSLocalizedString("RepositoryListCell.starCountString", bundle: .main, value: "%@ stars", comment: "")
     let repository: RepositoryDescription
+    
     init(repository: RepositoryDescription) {
         self.repository = repository
     }

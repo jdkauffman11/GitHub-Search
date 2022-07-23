@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct SearchTextField: View {
-    @State private var searchContents = ""
+    
     private let searchPlaceholder = NSLocalizedString("SearchView.searchPlaceholder", bundle: .main, value: "Type a repository name, description or 'README'", comment: "search field placeholder notifying user of searchable content")
+    
+    @State private var searchContents = ""
     
     var body: some View {
         TextField(searchPlaceholder, text: $searchContents)

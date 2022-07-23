@@ -9,6 +9,7 @@ import Foundation
 import Combine
 
 class SearchViewModel: ObservableObject {
+    
     private var task: AnyCancellable?
     @Published var searchResult = GitHubRepoSearchResponse()
     @Published var searchError: GHSError? = nil
@@ -22,8 +23,9 @@ class SearchViewModel: ObservableObject {
             return
         }
         
-        var request = URLRequest(url: url)
-        request.allHTTPHeaderFields = ["Authorization": "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"]
+        // Hitting the url with curl required an Authorization header with a GH PAT, upon removal it appears to work without it
+        let request = URLRequest(url: url)
+        // request.allHTTPHeaderFields = ["Authorization": ""]
         task = URLSession.shared.dataTaskPublisher(for: request)
             .map { $0.data }
             .decode(type: GitHubRepoSearchResponse.self, decoder: JSONDecoder())

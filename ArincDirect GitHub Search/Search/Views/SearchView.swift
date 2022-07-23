@@ -9,6 +9,7 @@ import SwiftUI
 import Combine
 
 struct SearchView: View {
+    
     private let repositoryTitle = NSLocalizedString("SearchView.searchTitle",
                                                     bundle: .main,
                                                     value: "Repository search",
@@ -23,11 +24,13 @@ struct SearchView: View {
                                                comment: "")
     private let alertTitle = NSLocalizedString("SearchView.alertTitle", bundle: .main, value: "Oh no!", comment: "")
     private let tryAgain = NSLocalizedString("SearchView.tryAgain", bundle: .main, value: "Try again", comment: "")
+    
     @ObservedObject private var filters = RepositorySearchFilter()
     @ObservedObject private var searchViewModel = SearchViewModel()
     @State private var searchContents = ""
     @State private var showError = false
     @State private var showingFilters = false
+    
     init() {
         configureNavBar()
         filters.searchText = searchContents
@@ -36,21 +39,21 @@ struct SearchView: View {
     var body: some View {
         NavigationView {
             ZStack {
+                // Main search view with search field, results, filter button, list of results and submit button
                 VStack {
                     VStack(alignment: .leading, spacing: 0) {
+                        // HStack for result text and filter button
                         HStack {
                             ResultCountView(showingResultCount: searchViewModel.searchResult.items?.count, totalResultCount: searchViewModel.searchResult.total_count)
                                 .padding(.vertical, 8)
                             Spacer()
-                            Button(action: {
-                                showingFilters = true
-                            }) {
-                                Image(systemName: "line.3.horizontal")
-                            }
-                            .padding(.trailing, 16)
+                            Button(action: { showingFilters = true }) { Image(systemName: "line.3.horizontal") }
+                                .font(.title)
+                                .padding(.trailing, 16)
                         }
                         RepositoryListView(repositories: searchViewModel.searchResult.items)
                     }
+                    // submit button to initiate search
                     Button(submitText) {
                         searchRepos()
                     }
@@ -63,11 +66,13 @@ struct SearchView: View {
                     showingFilters = false
                 }
                 .alert(item: $searchViewModel.searchError) { _ in
+                    // alert view that appears when the api call encounters an error, prompts user to retry
                     Alert(title: Text(alertTitle),
                           message: Text(searchViewModel.searchError!.error.description),
                           primaryButton: .default(Text(tryAgain), action: { searchRepos() }),
                           secondaryButton: .cancel())
                 }
+                // show filter view logic
                 if showingFilters {
                     SearchFilterView(filterModel: filters)
                         .padding()
@@ -85,12 +90,10 @@ struct SearchView: View {
     }
     
     func searchRepos() {
-//        searchViewModel.fetchRepos(searchText: searchContents)
         showingFilters = false
         endTextEditing()
         filters.searchText = searchContents
         searchViewModel.fetchRepos(searchFilters: filters)
-
     }
     
     func configureNavBar() {

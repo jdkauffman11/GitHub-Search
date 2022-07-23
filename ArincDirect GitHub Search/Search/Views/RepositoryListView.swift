@@ -9,6 +9,7 @@ import SwiftUI
 import CoreData
 
 struct RepositoryListView: View {
+    
     @Environment(\.managedObjectContext) var context
     
     let repositories: [RepositoryDescription]
