@@ -74,7 +74,7 @@ struct SearchView: View {
                 }
                 // show filter view logic
                 if showingFilters {
-                    SearchFilterView(filterModel: filters)
+                    SearchFilterView(filterModel: filters, dismissView: { showingFilters = false })
                         .padding()
                 }
             }
